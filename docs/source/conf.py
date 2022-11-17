@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.abspath("."))
 # -- Project information -----------------------------------------------------
 
 project = "vetiver"
-copyright = "2022, RStudio"
+copyright = "2022, Posit"
 author = "Isabel Zimmerman"
 
 # The full version, including alpha/beta/rc tags

@@ -7,7 +7,7 @@ import os
 from .write_fastapi import write_app
 
 
-def deploy_rsconnect(
+def deploy_connect(
     connect_server,
     board,
     pin_name: str,
@@ -113,3 +113,7 @@ def deploy_rsconnect(
             log_callback=log_callback,
             image=image,
         )
+
+
+
+deploy_rsconnect  = deploy_connect

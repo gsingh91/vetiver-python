@@ -11,7 +11,7 @@ testpaths = ["vetiver"]
 addopts = "--doctest-modules"
 doctest_optionflags = "NORMALIZE_WHITESPACE"
 markers = [
-    "rsc_test: tests for rstudio connect",
+    "connect: tests for posit connect",
 ]
 
 [tool.setuptools_scm]

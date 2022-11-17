@@ -15,7 +15,7 @@ import vetiver
 RSC_SERVER_URL = "http://localhost:3939"
 RSC_KEYS_FNAME = "vetiver/tests/rsconnect_api_keys.json"
 
-pytestmark = pytest.mark.rsc_test  # noqa
+pytestmark = pytest.mark.connect # noqa
 
 
 def get_key(name):
@@ -76,7 +76,7 @@ def test_deploy(rsc_short):
     connect_server = RSConnectServer(url=RSC_SERVER_URL, api_key=get_key("susan"))
     assert isinstance(board.pin_read("susan/model"), sklearn.dummy.DummyRegressor)
 
-    vetiver.deploy_rsconnect(
+    vetiver.deploy_connect(
         connect_server=connect_server,
         board=board,
         pin_name="susan/model",

@@ -20,16 +20,16 @@ help:
 	@echo "clean-test - remove test and coverage artifacts"
 	@echo "lint - check style with flake8"
 	@echo "test - run tests quickly with the default Python"
-	@echo "test-rsc - run tests for rsconnect"
+	@echo "test-connect - run tests for connect"
 	@echo "coverage - check code coverage quickly with the default Python"
 	@echo "docs - generate Sphinx HTML documentation, including API docs"
 	@echo "cdocs - cleanout previous build & generate Sphinx HTML documentation, including API docs"
 	@echo "release - package and upload a release"
 	@echo "dist - package"
 	@echo "install - install the package to the active Python's site-packages"
-	@echo "dev - generate RStudio Connect API keys"
-	@echo "dev-start - start up development RStudio Connect in Docker"
-	@echo "dev-stop - stop RStudio Connect dev container"
+	@echo "dev - generate Connect API keys"
+	@echo "dev-start - start up development Connect in Docker"
+	@echo "dev-stop - stop Connect dev container"
 
 clean: clean-build clean-pyc clean-test docs-clean
 
@@ -55,9 +55,9 @@ lint:
 	flake8 vetiver
 
 test: clean-test
-	pytest -m 'not rsc_test'
+	pytest -m 'not connect'
 
-test-rsc: clean-test
+test-connect: clean-test
 	pytest
 
 coverage:

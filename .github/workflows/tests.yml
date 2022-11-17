@@ -39,8 +39,8 @@ jobs:
       - name: Upload coverage
         uses: codecov/codecov-action@v2
 
-  test-rsconnect:
-    name: "Test RSConnect"
+  test-connect:
+    name: "Test Connect"
     runs-on: ubuntu-latest
     if: ${{ !github.event.pull_request.head.repo.fork }}
     steps:

@@ -36,7 +36,7 @@ def write_docker(
         path: str
             Path to save Dockerfile
         rspm_env: bool
-            Whether or not RStudio Package Manager should be used
+            Whether or not Posit Package Manager should be used
         host: str
             Host address to run VetiverAPI from Dockerfile
         port: str
